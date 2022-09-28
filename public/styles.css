@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap");
+:root {
+  --text: #f7efef;
+}
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -22,14 +26,17 @@ aside {
   flex-direction: column;
   justify-content: start;
   align-items: left;
-  border-right: 1px solid #eaeaea;
+  border-right: 1px solid #2e2b2b;
 }
+
 .prevIssuesContainer {
   padding: 0rem 2.75rem;
 }
-.prevIssuesContainer h3 {
+.prevIssuesContainer > h3 {
+  color: rgb(120, 112, 108);
   font-size: 1.5rem;
 }
+
 footer {
   width: 100%;
   height: 100px;
@@ -70,6 +77,61 @@ a {
   line-height: 1.15;
   font-size: 4rem;
 }
+.postPreview {
+  color: rgb(120, 112, 108);
+  transition: all 0.3s ease;
+}
+.postPreview h3 {
+  font-family: "Compacta", serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 2.2rem;
+}
+.postPreview p {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+}
+.postPreview:hover {
+  color: var(--text);
+}
+
+.postPreview:hover .cerc {
+  background: #312f2e;
+  color: var(--text);
+}
+.cerc {
+  float: right;
+  padding: 5px;
+  background: #2c2828;
+  border-radius: 99px;
+  width: 35px;
+  height: 35px;
+  translate: 0px -10px;
+  line-height: 1.5rem;
+  padding-left: 10px;
+  color: rgb(120, 112, 108);
+}
+.prevIssuesContainer h3 {
+  margin-block-end: 0.5rem;
+}
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 2rem 2.5rem;
+  text-align: left;
+  color: rgb(120, 112, 108);
+  text-decoration: none;
+  border: 1px solid #2e2b2b;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #2c2828;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  background: #2e2b2b;
+  color: white;
+}
 
 .title,
 .description {
@@ -81,15 +143,6 @@ a {
   font-size: 1.5rem;
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
 .grid {
   display: flex;
   align-items: center;
@@ -98,25 +151,6 @@ code {
 
   max-width: 800px;
   margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
 }
 
 .card h3 {
@@ -146,6 +180,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #252222;
 }
 @font-face {
   font-family: "Compacta";

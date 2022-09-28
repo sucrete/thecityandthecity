@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "number": "1",
+      "title": "Just Want to Get and Get Got",
+      "season": "Fall, 2022",
+      "author": "Jack Corso",
+      "text": "Lorem ipsum dolor "
+    },
+    {
+      "number": "2",
+      "title": "The Spleen of Kansas City",
+      "season": "Early Winter, 2022",
+      "author": "Jack Corso",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+    },
+    {
+      "number": "3",
+      "title": "Our Iron Giant",
+      "season": "Winter, 2022",
+      "author": "Jack Corso",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    }
+  ]
+}
