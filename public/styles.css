@@ -4,7 +4,7 @@
 }
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -30,7 +30,7 @@ aside {
 }
 
 .prevIssuesContainer {
-  padding: 0rem 2.75rem;
+  padding: 0rem 3.75rem;
 }
 .prevIssuesContainer > h3 {
   color: rgb(120, 112, 108);
@@ -82,33 +82,30 @@ a {
   transition: all 0.3s ease;
 }
 .postPreview h3 {
-  font-family: "Compacta", serif;
+  font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
-  font-size: 3rem;
-  line-height: 2.2rem;
+  font-size: 1.2rem;
+  margin-block-end: 0rem;
 }
 .postPreview p {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
+  margin-block-start: 0.2rem;
+  margin-bottom: 2rem;
+}
+.postPreview p span {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 .postPreview:hover {
   color: var(--text);
 }
-
 .postPreview:hover .cerc {
-  background: #312f2e;
   color: var(--text);
 }
 .cerc {
   float: right;
   padding: 5px;
-  background: #2c2828;
-  border-radius: 99px;
-  width: 35px;
-  height: 35px;
-  translate: 0px -10px;
-  line-height: 1.5rem;
-  padding-left: 10px;
   color: rgb(120, 112, 108);
 }
 .prevIssuesContainer h3 {
@@ -130,7 +127,7 @@ a {
 .card:focus,
 .card:active {
   background: #2e2b2b;
-  color: white;
+  color: var(--text);
 }
 
 .title,

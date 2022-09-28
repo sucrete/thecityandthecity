@@ -32,8 +32,9 @@ export default function Home() {
         </a>
         <div className="prevIssuesContainer">
           <h3>Previous Issues</h3>
-
-          <PostPreview title={posts[0].title} body={posts[0].text} />
+          {posts.slice(0, 3).map((post, index) => (
+            <PostPreview key={index} title={post.title} body={post.text} />
+          ))}
         </div>
       </aside>
       <main>
